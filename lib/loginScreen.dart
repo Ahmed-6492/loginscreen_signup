@@ -17,8 +17,8 @@ class loginScreen extends StatelessWidget {
             Color(0xff2B1836),
           ])
         ),
-        child: Padding(
-          padding: const EdgeInsets.only(top:60.0,left:22),
+        child: const Padding(
+          padding:  EdgeInsets.only(top:60.0,left:22),
           child: Text("Hello\nSign in!",style:TextStyle(
             fontSize: 30,
             color: Colors.white,fontWeight: FontWeight.bold,
@@ -29,7 +29,7 @@ class loginScreen extends StatelessWidget {
       Padding(
         padding: const EdgeInsets.only(top: 200.0,),
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(40),
               topRight:Radius.circular(40) ,
@@ -44,7 +44,7 @@ class loginScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                TextField(
+                const TextField(
                   decoration: InputDecoration(
                     suffixIcon:Icon(Icons.check,color:Colors.grey),
                     label: Text('Gmail', style: TextStyle(
@@ -53,7 +53,7 @@ class loginScreen extends StatelessWidget {
                     ))
                   ),
                 ),
-          TextField(
+         const  TextField(
                   decoration: InputDecoration(
                     suffixIcon:Icon(Icons.visibility_off,color:Colors.grey),
                     label: Text('Password', style: TextStyle(
@@ -62,16 +62,53 @@ class loginScreen extends StatelessWidget {
                     ))
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(top:15.0),
-                  child: Align(
-                    alignment: Alignment.centerRight,
-                    child: Text("Forgot Password?",style: TextStyle(
-                      fontWeight: FontWeight.bold,color:Color(0xffBB1736)
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: Text("Forgot Password?",style: TextStyle(
+                    fontWeight: FontWeight.bold,color:Color(0xffBB1736)
 ,                    )),
-                  ),
-                )
+                ),
+                SizedBox(height: 70),
+            Container(
+        height: 50,
+        width: 300,
+        decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(30),
+
+          gradient: LinearGradient(colors: [
+            Color(0xffB81736),
+            Color(0xff2B1836),
+          ])
+        ),
+        child: Center(
+          child:
+          Text("SIGN IN",style:TextStyle(fontWeight: FontWeight.bold,
+          fontSize:20,
+          color: Colors.white)),
+        ),
+            ),
+            SizedBox(height: 150),
+               Align(
+                  alignment: Alignment.bottomRight,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                       
+                       Text("Dont have an Account?",style:TextStyle(fontWeight: FontWeight.bold,
+          
+          color: Colors.grey)
+                       
+          ),
+          Text("Sign Up",style:TextStyle(fontWeight: FontWeight.bold,
+          fontSize:17,
+          color: Colors.black)
+                       
+          ),
+                    ],),
+                ),  
               ],
+              
             ),
           ),
         ),

@@ -39,4 +39,4 @@ Feel free to explore the code, customize the UI, and use it as a foundation for 
 
 ---
 
-Remember to replace placeholders with actual information and customize the content according to your project's specifics. This README aims to introduce users to your app, highlight its features, and guide them on how to set it up.
+

@@ -1,6 +1,4 @@
-Absolutely, here's an example of how you might describe your Flutter app with the three screens in a GitHub README:
 
----
 
 # Flutter Multi-Screen App: Login, Welcome, and Signup
 
